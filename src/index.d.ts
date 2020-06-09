@@ -38,4 +38,4 @@ interface ResizeObserver {
 }
 
 export default ResizeObserver
-export { ResizeObserver as ResizeObserverPolyFill }
+export { ResizeObserver as ResizeObserverPolyfill }

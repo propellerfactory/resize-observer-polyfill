@@ -10,4 +10,5 @@ export default (() => {
     return ResizeObserverPolyfill;
 })();
 
-export { ResizeObserverPolyfill }
+// eslint-disable-next-line object-curly-spacing
+export { ResizeObserverPolyfill };
