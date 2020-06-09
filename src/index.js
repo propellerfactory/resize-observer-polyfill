@@ -9,3 +9,5 @@ export default (() => {
 
     return ResizeObserverPolyfill;
 })();
+
+export { ResizeObserverPolyfill }

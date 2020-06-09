@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global.ResizeObserver = factory());
-}(this, (function () { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+    typeof define === 'function' && define.amd ? define(['exports'], factory) :
+    (factory((global.ResizeObserver = {})));
+}(this, (function (exports) { 'use strict';
 
     /**
      * A collection of shims that provide minimal functionality of the ES6 collections.
@@ -931,6 +931,9 @@
         return ResizeObserver;
     })();
 
-    return index;
+    exports.default = index;
+    exports.ResizeObserverPolyfill = ResizeObserver;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
